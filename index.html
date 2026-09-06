@@ -183,6 +183,18 @@
     .project{ transition:box-shadow .15s ease, border-color .15s ease; }
     .project:hover{ border-color:var(--blue-dim); }
   }
+
+  @media print{
+    @page{ size:A4; margin:14mm; }
+    :root{
+      --paper:#F5F1E7; --paper-raised:#FBF8F1; --ink:#1C2024; --ink-soft:#4B5259;
+      --line:#D9D2C1; --blue:#1F4E8C; --blue-dim:#5C7DA6; --blue-wash:#E4EAF2; --rust:#A8502E;
+    }
+    header.hero{ padding:0 0 28px; -webkit-mask-image:none; mask-image:none; }
+    .project, .edu-row, .skills-grid{ break-inside:avoid; page-break-inside:avoid; }
+    section{ padding:28px 0; }
+    a{ text-decoration:underline; }
+  }
 </style>
 
 <header class="hero">
