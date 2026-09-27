@@ -3,50 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dhwani Kherawat — Futuristic 3D Developer Portfolio & Digital Installation. Pure semantic HTML5 and advanced CSS3 spatial perspective.">
+  <meta name="description" content="Dhwani Kherawat — Digital Craft &amp; Systems Architecture. CS Student at Scaler School of Technology (BITS Pilani). Pure semantic HTML5 and advanced CSS3 spatial perspective.">
   <meta name="author" content="Dhwani Kherawat">
-  <title>Dhwani Kherawat — Digital Craft &amp; Systems 2026</title>
+  <title>Dhwani Kherawat — Digital Craft &amp; Systems Architecture</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FBF9F5'/><text y='.9em' font-size='75' x='12' fill='%231B528F'>⬡</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230F172A'/><text y='.72em' x='20' font-size='62' font-family='sans-serif' font-weight='800' fill='%23FFFFFF'>DK</text></svg>">
 </head>
 <body>
 
   <!-- ========================================================================
-       01. MINIMAL FIXED NAVIGATION (CSS-ONLY INTERACTION)
+       01. FIXED NAVIGATION (FROSTED GLASS ARCHITECTURE)
        ======================================================================== -->
   <header class="site-nav">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle Navigation Menu">
-    
-    <div class="nav-container">
+    <div class="container nav-inner">
       <a href="#hero" class="nav-brand" aria-label="Dhwani Kherawat Home">
-        <div class="brand-glyph" aria-hidden="true">⬡</div>
-        <div class="brand-title">
-          <span class="brand-name">Dhwani Kherawat</span>
-          <span class="brand-role">Systems &amp; Digital Craft</span>
-        </div>
+        <div class="brand-badge" aria-hidden="true">DK</div>
+        <span>Dhwani Kherawat</span>
       </a>
 
-      <!-- Desktop & Mobile Menu -->
-      <nav class="nav-menu" aria-label="Main Navigation">
-        <a href="#work" class="nav-item"><span class="nav-num">01 /</span> Work</a>
-        <a href="#about" class="nav-item"><span class="nav-num">02 /</span> About</a>
-        <a href="#experiments" class="nav-item"><span class="nav-num">03 /</span> Experiments</a>
-        <a href="#capabilities" class="nav-item"><span class="nav-num">04 /</span> Capabilities</a>
-        <a href="#experience" class="nav-item"><span class="nav-num">05 /</span> Dossier</a>
-        <a href="#contact" class="nav-item"><span class="nav-num">06 /</span> Contact</a>
+      <!-- Pure CSS Mobile Hamburger Input -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle Navigation Menu">
+
+      <!-- Navigation Menu -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experiments" class="nav-link">Experiments</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <div class="nav-actions">
-        <div class="status-beacon">
+      <div class="nav-cta">
+        <div class="status-pill">
           <span class="status-dot"></span>
-          <span>Online // 2026</span>
+          <span>Available 2026</span>
         </div>
-        <a href="./resume.pdf" class="magnetic-btn btn-ghost" target="_blank" rel="noopener">
-          <span>Dossier ↗</span>
+        <a href="./resume.pdf" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
+          Dossier ↗
         </a>
       </div>
 
-      <!-- Pure CSS Mobile Hamburger Trigger -->
+      <!-- Hamburger Icon for Mobile -->
       <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
         <span></span>
         <span></span>
@@ -58,73 +56,103 @@
   <main>
 
     <!-- ======================================================================
-         02. HERO SECTION — EDITORIAL REALITIES & 3D DIGITAL SCULPTURE
+         02. HERO SECTION — MONUMENTAL EDITORIAL & 3D SPATIAL RIG
          ====================================================================== -->
     <section id="hero" class="hero-section">
-      <div class="viewport-frame hero-grid">
+      <div class="container hero-grid">
         <div class="hero-typography">
-          <div class="hero-meta-badge">
-            Independent Digital Craft / 2026.04
+          <div class="hero-meta-top">
+            <span class="section-tag">2026 Edition</span>
+            <span class="hero-location">📍 Bengaluru, India</span>
           </div>
 
-          <!-- Editorial Headline with 3D Dimensional Layering -->
-          <h1 class="hero-title">
-            <span class="word-1">Designing</span>
-            <span class="word-2">Digital</span>
-            <span class="word-3">Realities.</span>
+          <h1 class="hero-headline">
+            Designing<br>
+            Digital<br>
+            <span class="serif-accent">Realities.</span>
           </h1>
 
           <p class="hero-bio">
             I am <strong>Dhwani Kherawat</strong>, a Computer Science student at
             <strong>Scaler School of Technology</strong> (BITS Pilani).
-            I build systems and interfaces engineered to withstand real-world failure:
-            mid-write power cuts, concurrent write collisions, and corrupted CAD vector geometry.
+            I architect systems and interfaces that hold up under adversarial edge cases:
+            concurrent write collisions, mid-write power interruptions, and corrupted CAD geometry.
           </p>
 
-          <div class="hero-cta-group">
-            <a href="#work" class="magnetic-btn">
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
               <span>Explore Work</span>
-              <span class="arrow-icon">→</span>
+              <span>↓</span>
             </a>
-            <a href="#contact" class="magnetic-btn btn-ghost">
-              <span>Contact Me</span>
-              <span class="arrow-icon">→</span>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+              <span>→</span>
             </a>
-            <a href="./resume.pdf" class="magnetic-btn btn-ghost" target="_blank" rel="noopener">
-              <span>Download Dossier ↗</span>
+            <a href="./resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+              <span>Download Resume ↗</span>
             </a>
+          </div>
+
+          <!-- Floating Stats Metric Strip -->
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-value">03</span>
+              <span class="stat-label">Systems Shipped</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">170+</span>
+              <span class="stat-label">Crash Scenarios Verified</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Durability Proven</span>
+            </div>
           </div>
         </div>
 
-        <!-- Central 3D Digital Sculpture (Constructed from Pure HTML & CSS 3D) -->
-        <div class="sculpture-stage" aria-label="Interactive 3D Digital Sculpture">
-          <div class="sculpture-viewport">
-            <!-- Concentric Gyroscope Rings -->
-            <div class="gyro-ring gyro-ring-1"></div>
-            <div class="gyro-ring gyro-ring-2"></div>
-            <div class="gyro-ring gyro-ring-3"></div>
-
-            <!-- Central 3D Rotating Hyper-Cube -->
-            <div class="hyper-cube">
-              <div class="cube-face face-front">DURABILITY</div>
-              <div class="cube-face face-back">WAL 170+</div>
-              <div class="cube-face face-right">PERSPECTIVE</div>
-              <div class="cube-face face-left">CONCURRENCY</div>
-              <div class="cube-face face-top">HTML5/CSS3</div>
-              <div class="cube-face face-bottom">ZERO JS</div>
+        <!-- High-End 3D Spatial Interaction Rig (Apple / Stripe Level Depth) -->
+        <div class="spatial-rig-stage" aria-label="3D Spatial Architecture Showcase">
+          <div class="spatial-rig-container">
+            <!-- Layer 0: Frosted Base Window -->
+            <div class="rig-layer-base">
+              <div class="rig-base-header">
+                <div class="rig-dots">
+                  <span class="rig-dot"></span>
+                  <span class="rig-dot"></span>
+                  <span class="rig-dot"></span>
+                </div>
+                <span class="rig-window-title">dhwani@sst:~ (systems.spec)</span>
+              </div>
+              <div class="rig-base-body">
+                <div class="rig-code-snippet">
+                  <div class="rig-code-line"><strong>type</strong> DurabilityEngine <strong>struct</strong> {</div>
+                  <div class="rig-code-line">&nbsp;&nbsp;WAL: SyncWriter,</div>
+                  <div class="rig-code-line">&nbsp;&nbsp;Memtable: SkipList,</div>
+                  <div class="rig-code-line">&nbsp;&nbsp;VFS: CrashInjectMock,</div>
+                  <div class="rig-code-line">}</div>
+                  <div class="rig-code-line" style="color:var(--accent-emerald); margin-top:6px;">// 43 crash points: 100% pass</div>
+                </div>
+                <div style="font-size:12.5px; color:var(--text-secondary); line-height:1.5;">
+                  "Verified, not assumed: If it isn't tested against intentional crash points and concurrent races, it isn't durable."
+                </div>
+              </div>
             </div>
 
-            <!-- Coordinate Axes -->
-            <div class="sculpture-axis">
-              <div class="axis-line axis-x"></div>
-              <div class="axis-line axis-y"></div>
-              <div class="axis-line axis-z"></div>
+            <!-- Layer 1: Floating Telemetry HUD Card -->
+            <div class="rig-layer-floating">
+              <div class="rig-badge-row">
+                <span class="rig-badge-tag">Verification Metric</span>
+                <span style="color:var(--accent-emerald); font-size:12px;">● PASSED</span>
+              </div>
+              <div class="rig-card-val">5 Taps · 0 Race</div>
+              <div class="rig-card-desc">Atomic findOneAndUpdate invariant proven</div>
             </div>
 
-            <!-- Orbital Floating Data Nodes -->
-            <div class="orbit-node orbit-node-1">[ SYS.WAL.OK ]</div>
-            <div class="orbit-node orbit-node-2">[ 12.97°N · 77.59°E ]</div>
-            <div class="orbit-node orbit-node-3">[ PERSPECTIVE 1200PX ]</div>
+            <!-- Layer 2: Floating 3D Badge -->
+            <div class="rig-layer-chip">
+              <span class="rig-chip-icon">⬡</span>
+              <span class="rig-chip-text">Pure HTML5 + CSS3 Spatial 3D</span>
+            </div>
           </div>
         </div>
       </div>
@@ -133,86 +161,74 @@
     <!-- ======================================================================
          03. ABOUT SECTION — EDITORIAL PHILOSOPHY & SPECIFICATION MATRIX
          ====================================================================== -->
-    <section id="about" class="about-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">01 // Architectural Intention</span>
-          <span class="coord-label">LOC: 12.9716° N · 77.5946° E</span>
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">01 // Architectural Intention</span>
+          <h2 class="section-title">Engineered With Intention.</h2>
+          <p class="section-subtitle">
+            Building software where systems resilience, concurrency, and intuitive frontend experiences meet without compromise.
+          </p>
         </div>
 
-        <div class="about-editorial-grid">
-          <div>
-            <h2 class="editorial-headline">
-              Engineered<br>With <em>Intention.</em>
-            </h2>
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              I am a Computer Science undergraduate at <strong>Scaler School of Technology</strong> in Bengaluru,
+              with my degree awarded by <strong>BITS Pilani</strong>. My work focuses on finding the subtle edge cases
+              in both software infrastructure and frontend applications before they surprise users in production.
+            </p>
 
-            <div class="editorial-prose">
-              <p>
-                I approach digital engineering not as template composition, but as the
-                deliberate construction of resilient mechanical architectures.
-                Most software flourishes on the happy path where packets arrive linearly and electricity is continuous.
-                <strong>I specialize in the parts of the architecture that fail when reality intervenes.</strong>
-              </p>
-
-              <blockquote class="editorial-manifesto">
-                "Verified, not assumed: If a durability contract or concurrency invariant has not been subjected
-                to simulated unannounced destruction and multi-threaded race conditions, it is merely a hypothesis."
-              </blockquote>
-
-              <p>
-                On the user interface frontier, I treat layout integrity and accessibility as structural invariants.
-                A design system that collapses when zoomed to 200% or that relies on heavy script runtimes to establish basic spatial depth
-                fails the engineering mandate. This entire installation demonstrates that profound 3D perspective, responsive typography,
-                and tactile micro-interactions can be forged using <strong>semantic HTML5 and advanced CSS3 alone</strong>.
+            <div class="editorial-callout">
+              <p class="callout-quote">
+                "Most software works smoothly when network packets arrive in order and power never cuts out.
+                I write the tests that deliberately break those assumptions, and then design systems that recover cleanly."
               </p>
             </div>
+
+            <p>
+              On the user interface frontier, I treat <strong>accessibility and layout integrity as first-class engineering requirements</strong>.
+              Whether ensuring high-contrast modes remain legible or preventing critical action buttons from being pushed off-screen
+              at 200% zoom, I believe a great web experience starts with semantic HTML, fluid CSS layouts, and disciplined responsive design.
+            </p>
           </div>
 
-          <!-- Technical Specification Matrix -->
-          <div class="spec-matrix">
-            <article class="spec-block">
-              <div class="spec-header">
-                <span class="spec-title">Disciplines</span>
-                <span class="spec-id">SPEC // 01</span>
-              </div>
-              <div class="spec-list">
-                <span class="spec-tag">Systems Durability</span>
-                <span class="spec-tag">Distributed Edge Cases</span>
-                <span class="spec-tag">UI Engineering</span>
-                <span class="spec-tag">3D Spatial CSS</span>
-                <span class="spec-tag">Web Accessibility (a11y)</span>
-                <span class="spec-tag">Concurrency Verification</span>
+          <!-- Technical Specification Cards -->
+          <div class="spec-cards">
+            <article class="spec-card">
+              <h3 class="spec-card-title">Disciplines</h3>
+              <div class="spec-tags-flow">
+                <span class="spec-chip highlight">Systems Durability</span>
+                <span class="spec-chip highlight">Distributed Edge Cases</span>
+                <span class="spec-chip">UI Engineering</span>
+                <span class="spec-chip">3D Spatial CSS</span>
+                <span class="spec-chip">Web Accessibility (a11y)</span>
+                <span class="spec-chip">Concurrency Testing</span>
               </div>
             </article>
 
-            <article class="spec-block">
-              <div class="spec-header">
-                <span class="spec-title">Kernel Stack</span>
-                <span class="spec-id">SPEC // 02</span>
-              </div>
-              <div class="spec-list">
-                <span class="spec-tag">Go (Golang)</span>
-                <span class="spec-tag">JavaScript (ES6+)</span>
-                <span class="spec-tag">React.js</span>
-                <span class="spec-tag">Node.js</span>
-                <span class="spec-tag">WebSockets</span>
-                <span class="spec-tag">MongoDB</span>
-                <span class="spec-tag">HTML5 / CSS3 3D</span>
-                <span class="spec-tag">POSIX / Linux</span>
+            <article class="spec-card">
+              <h3 class="spec-card-title">Kernel Stack</h3>
+              <div class="spec-tags-flow">
+                <span class="spec-chip highlight">Go (Golang)</span>
+                <span class="spec-chip highlight">JavaScript (ES6+)</span>
+                <span class="spec-chip">React.js</span>
+                <span class="spec-chip">Node.js</span>
+                <span class="spec-chip">WebSockets</span>
+                <span class="spec-chip">MongoDB</span>
+                <span class="spec-chip">HTML5 / CSS3 3D</span>
+                <span class="spec-chip">POSIX / Linux</span>
               </div>
             </article>
 
-            <article class="spec-block">
-              <div class="spec-header">
-                <span class="spec-title">Standards &amp; Proofs</span>
-                <span class="spec-id">SPEC // 03</span>
-              </div>
-              <div class="spec-list">
-                <span class="spec-tag">AS9102 First Article</span>
-                <span class="spec-tag">GD&amp;T Dimensional Specs</span>
-                <span class="spec-tag">WAL Atomic Guarantees</span>
-                <span class="spec-tag">VFS Crash Injection</span>
-                <span class="spec-tag">Zero Client-Side JS</span>
+            <article class="spec-card">
+              <h3 class="spec-card-title">Standards &amp; Proofs</h3>
+              <div class="spec-tags-flow">
+                <span class="spec-chip highlight">AS9102 First Article</span>
+                <span class="spec-chip highlight">GD&amp;T Dimensional Specs</span>
+                <span class="spec-chip">WAL Atomic Guarantees</span>
+                <span class="spec-chip">VFS Crash Injection</span>
+                <span class="spec-chip">Zero Client-Side JS</span>
               </div>
             </article>
           </div>
@@ -221,248 +237,256 @@
     </section>
 
     <!-- ======================================================================
-         04. SELECTED WORK — IMMERSIVE 3D PROJECT SCENES
+         04. SELECTED PROJECTS SHOWCASE (CROWN JEWEL EXHIBIT)
          ====================================================================== -->
-    <section id="work" class="projects-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">02 // Selected Works</span>
-          <span class="coord-label">4 SHIPPED &amp; VERIFIED SYSTEMS</span>
+    <section id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">02 // Selected Works</span>
+          <h2 class="section-title">Four Shipped &amp; Verified Systems</h2>
+          <p class="section-subtitle">
+            Each project is engineered with proven failure-mode test suites, not just theoretical assumptions.
+          </p>
         </div>
 
-        <div class="project-scenes">
+        <div class="projects-gallery">
 
           <!-- Project 01: KIN -->
-          <article class="project-scene">
-            <div class="scene-dossier">
-              <div class="scene-index-badge">
-                <span class="scene-num">01</span>
-                <span>// REAL-TIME CONCURRENCY</span>
+          <article class="project-exhibit">
+            <div class="project-content">
+              <div class="project-index-row">
+                <span class="project-index-num">01</span>
+                <span>REAL-TIME WEBSOCKET CONCURRENCY</span>
               </div>
 
-              <h3 class="scene-title">Kin</h3>
-              <p class="scene-subtitle">Shared Medication Schedule for Family Caregivers</p>
+              <h3 class="project-name">Kin</h3>
+              <p class="project-tagline">Shared Medication Schedule for Family Caregivers</p>
 
-              <p class="scene-narrative">
-                A real-time synchronization system preventing critical double-dosing when two family members care for one patient.
-                Every client viewing a care circle broadcasts over <strong>WebSockets</strong>. When two dosage updates land simultaneously,
-                a single atomic <code>findOneAndUpdate</code> ensures exactly one write commits while immediately notifying the conflicting caregiver.
+              <p class="project-description">
+                A real-time care coordination web application built so two family members caring for the same relative
+                never give the same dose twice. Every client watching a care circle updates over a <strong>WebSocket</strong> the instant a dose is recorded.
+                When two requests land simultaneously, an atomic <code>findOneAndUpdate</code> ensures exactly one write wins and notifies the second caregiver.
               </p>
 
-              <div class="scene-telemetry">
-                ⚡ <strong>Verified Concurrency:</strong> Swapping the atomic update for a standard read-then-write immediately fails both race tests; restoring it cleanly passes against 5 simultaneous mobile taps.
+              <div class="project-metric-pill">
+                ⚡ <strong>Verified Concurrency:</strong> Swapping the atomic update for a naive read-then-write immediately fails both race tests; restoring it cleanly passes against 5 simultaneous mobile taps.
               </div>
 
-              <div class="scene-stack-row">
-                <span class="stack-pill">React</span>
-                <span class="stack-pill">Node.js</span>
-                <span class="stack-pill">WebSockets</span>
-                <span class="stack-pill">MongoDB</span>
-                <span class="stack-pill">Vitest</span>
+              <div class="project-tech-pills">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Vitest</span>
+                <span class="tech-tag">WCAG AAA a11y</span>
               </div>
 
-              <div class="scene-actions">
-                <a href="https://github.com/dhwanikher/kin" class="magnetic-btn" target="_blank" rel="noopener">
+              <div class="project-links-row">
+                <a href="https://github.com/dhwanikher/kin" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
                   <span>View Repository</span>
-                  <span class="arrow-icon">→</span>
+                  <span>↗</span>
                 </a>
               </div>
             </div>
 
-            <!-- Pure CSS 3D Holographic App Stage -->
-            <div class="scene-visual" aria-hidden="true">
-              <div class="mockup-app-stage">
-                <div class="glass-window-back">
-                  <div class="window-chrome">
-                    <div class="chrome-dots">
-                      <span class="chrome-dot"></span>
-                      <span class="chrome-dot"></span>
-                      <span class="chrome-dot"></span>
-                    </div>
-                    <span>KIN // CAREGIVER_CIRCLES_V2</span>
+            <!-- Realistic Luxury Device Framing with Actual Screenshot -->
+            <div class="project-visual-frame">
+              <div class="device-viewport">
+                <div class="device-chrome-bar">
+                  <div class="chrome-buttons">
+                    <span class="chrome-btn-dot c-red"></span>
+                    <span class="chrome-btn-dot c-yellow"></span>
+                    <span class="chrome-btn-dot c-green"></span>
                   </div>
-                  <div class="window-content">
-                    <div class="app-live-feed">
-                      <div class="feed-row">
-                        <span>Relative: Grandparent (Bed 02)</span>
-                        <span class="feed-badge-green">● LIVE SYNC</span>
-                      </div>
-                      <div class="feed-row">
-                        <span>Aspirin 81mg — 13:00 UTC</span>
-                        <span style="color:var(--accent-cyan);">Recorded by Phone_A</span>
-                      </div>
-                      <div class="feed-row">
-                        <span>Simultaneous Tap from Phone_B</span>
-                        <span style="color:var(--accent-amber);">Atomic Lock: Rejected</span>
-                      </div>
-                    </div>
-                  </div>
+                  <span class="chrome-url">kin.caregiving.internal // live-sync</span>
+                  <span style="font-size:10px; color:var(--accent-emerald); font-weight:700;">● ONLINE</span>
                 </div>
-
-                <!-- Floating Layer: HUD Metric Badge -->
-                <div class="glass-floating-panel">
-                  <div class="hud-title">Race Test Verification</div>
-                  <div class="hud-metric">5 Taps · 0 Race</div>
-                  <div class="hud-caption">Atomic findOneAndUpdate invariant confirmed</div>
+                <div class="device-screenshot-wrap">
+                  <img src="images/kin-preview.jpg" alt="Kin Care Coordination UI showing real-time medication logging" width="600" height="400" loading="lazy">
                 </div>
+              </div>
+              <div class="floating-verification-pill">
+                <span>🛡️</span>
+                <span>Atomic Concurrency Verified</span>
               </div>
             </div>
           </article>
 
           <!-- Project 02: BALLOON -->
-          <article class="project-scene reverse-layout">
-            <div class="scene-dossier">
-              <div class="scene-index-badge">
-                <span class="scene-num">02</span>
-                <span>// CAD ENGINE &amp; AS9102</span>
+          <article class="project-exhibit reverse-layout">
+            <div class="project-content">
+              <div class="project-index-row">
+                <span class="project-index-num">02</span>
+                <span>CAD GEOMETRY &amp; AS9102 PARSER</span>
               </div>
 
-              <h3 class="scene-title">Balloon</h3>
-              <p class="scene-subtitle">Engineering Drawing to First Article Inspection Sheet</p>
+              <h3 class="project-name">Balloon</h3>
+              <p class="project-tagline">Engineering Drawing to First Article Inspection Sheet</p>
 
-              <p class="scene-narrative">
+              <p class="project-description">
                 Parses toleranced dimensions out of complex engineering drawing PDFs and generates numbered
                 First Article Inspection (AS9102) sheets. Reconstructs corrupted symbol glyphs where diameter symbols
                 degrade into bare characters, stitching baseline text runs into coherent geometric callouts.
               </p>
 
-              <div class="scene-telemetry">
+              <div class="project-metric-pill">
                 ⚡ <strong>Air-Gapped Privacy:</strong> Standalone Go binary with vendored pdf.js. Zero network requests ever leave the host machine, guaranteeing proprietary aerospace and hardware IP remains completely confidential.
               </div>
 
-              <div class="scene-stack-row">
-                <span class="stack-pill">Go (Golang)</span>
-                <span class="stack-pill">pdf.js</span>
-                <span class="stack-pill">AS9102 / GD&amp;T</span>
-                <span class="stack-pill">Regex Parser</span>
+              <div class="project-tech-pills">
+                <span class="tech-tag">Go (Golang)</span>
+                <span class="tech-tag">pdf.js</span>
+                <span class="tech-tag">AS9102</span>
+                <span class="tech-tag">GD&amp;T</span>
+                <span class="tech-tag">Regex Engine</span>
               </div>
 
-              <div class="scene-actions">
-                <a href="https://github.com/dhwanikher/balloon" class="magnetic-btn" target="_blank" rel="noopener">
+              <div class="project-links-row">
+                <a href="https://github.com/dhwanikher/balloon" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
                   <span>View Repository</span>
-                  <span class="arrow-icon">→</span>
+                  <span>↗</span>
                 </a>
               </div>
             </div>
 
-            <!-- Pure CSS 3D CAD Blueprint Isometric Stage -->
-            <div class="scene-visual" aria-hidden="true">
-              <div class="mockup-cad-stage">
-                <div class="cad-blueprint-board">
-                  <div class="cad-drawing-schema">
-                    <div class="cad-target-circle"></div>
-                    <div class="cad-balloon balloon-pos-1">01</div>
-                    <div class="cad-balloon balloon-pos-2">02</div>
-                    <div class="cad-balloon balloon-pos-3">03</div>
+            <!-- Realistic Device Framing with Actual Screenshot -->
+            <div class="project-visual-frame">
+              <div class="device-viewport">
+                <div class="device-chrome-bar">
+                  <div class="chrome-buttons">
+                    <span class="chrome-btn-dot c-red"></span>
+                    <span class="chrome-btn-dot c-yellow"></span>
+                    <span class="chrome-btn-dot c-green"></span>
                   </div>
+                  <span class="chrome-url">balloon.cad.internal // as9102-sheet</span>
+                  <span style="font-size:10px; color:var(--accent-blue); font-weight:700;">● AIR-GAPPED</span>
                 </div>
+                <div class="device-screenshot-wrap">
+                  <img src="images/balloon-preview.jpg" alt="Balloon CAD Drawing showing numbered inspection dimensions" width="600" height="400" loading="lazy">
+                </div>
+              </div>
+              <div class="floating-verification-pill">
+                <span>📐</span>
+                <span>AS9102 Vector Parsed</span>
               </div>
             </div>
           </article>
 
           <!-- Project 03: STOW -->
-          <article class="project-scene">
-            <div class="scene-dossier">
-              <div class="scene-index-badge">
-                <span class="scene-num">03</span>
-                <span>// STORAGE &amp; FAULT INJECTION</span>
+          <article class="project-exhibit">
+            <div class="project-content">
+              <div class="project-index-row">
+                <span class="project-index-num">03</span>
+                <span>STORAGE ENGINE &amp; CRASH INJECTION</span>
               </div>
 
-              <h3 class="scene-title">Stow</h3>
-              <p class="scene-subtitle">Embedded Key-Value Store Tested by Simulated Power Loss</p>
+              <h3 class="project-name">Stow</h3>
+              <p class="project-tagline">Embedded Key-Value Store Tested by Simulated Power Loss</p>
 
-              <p class="scene-narrative">
+              <p class="project-description">
                 An embedded key-value storage engine in Go utilizing a Write-Ahead Log (WAL) and memory table.
-                Since real physical disks cannot reliably arrange a power cut mid-write on demand, Stow sits behind an instrumented
+                Because power cuts cannot be scheduled on demand with physical disks, Stow sits behind an instrumented
                 VFS mock that forces simulated crashes at <strong>every single durability-relevant operation</strong>.
               </p>
 
-              <div class="scene-telemetry">
-                ⚡ <strong>Exhaustive Crash Replay:</strong> 43 crash points tested against clean crashes and three torn-write variants (~170 recovery scenarios per suite run), enforcing atomic commit durability.
+              <div class="project-metric-pill">
+                ⚡ <strong>Exhaustive Failure Injection:</strong> 43 crash points tested against clean crashes and three torn-write variants (~170 recovery scenarios per suite run), enforcing atomic commit durability.
               </div>
 
-              <div class="scene-stack-row">
-                <span class="stack-pill">Go</span>
-                <span class="stack-pill">Write-Ahead Log</span>
-                <span class="stack-pill">Memtable</span>
-                <span class="stack-pill">VFS Crash Mock</span>
+              <div class="project-tech-pills">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Write-Ahead Log</span>
+                <span class="tech-tag">Memtable</span>
+                <span class="tech-tag">VFS Mock</span>
+                <span class="tech-tag">Crash Simulation</span>
               </div>
 
-              <div class="scene-actions">
-                <a href="https://github.com/dhwanikher/stow" class="magnetic-btn" target="_blank" rel="noopener">
+              <div class="project-links-row">
+                <a href="https://github.com/dhwanikher/stow" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
                   <span>View Repository</span>
-                  <span class="arrow-icon">→</span>
+                  <span>↗</span>
                 </a>
               </div>
             </div>
 
-            <!-- Pure CSS 3D Server Chassis & Failure Topology -->
-            <div class="scene-visual" aria-hidden="true">
-              <div class="mockup-storage-stage">
-                <div class="server-chassis-shell">
-                  <div class="wal-pipeline-box">
-                    <span>WAL APPEND // SYNC: TRUE</span>
-                    <span style="color:var(--accent-green);">DURABLE COMMIT</span>
+            <!-- Realistic Device Framing with SVG Diagram -->
+            <div class="project-visual-frame">
+              <div class="device-viewport">
+                <div class="device-chrome-bar">
+                  <div class="chrome-buttons">
+                    <span class="chrome-btn-dot c-red"></span>
+                    <span class="chrome-btn-dot c-yellow"></span>
+                    <span class="chrome-btn-dot c-green"></span>
                   </div>
-                  <div class="crash-matrix-grid">
-                    <div class="matrix-cell pass">CRASH 01<br>PASSED</div>
-                    <div class="matrix-cell pass">CRASH 12<br>PASSED</div>
-                    <div class="matrix-cell pass">CRASH 28<br>PASSED</div>
-                    <div class="matrix-cell pass">CRASH 43<br>PASSED</div>
-                  </div>
-                  <div style="font-size:10px; color:var(--text-muted); margin-top:auto;">
-                    Recovery Engine: 170 Scenarios Verified · Zero Corrupted Inodes
-                  </div>
+                  <span class="chrome-url">stow/internal/vfs // crash_test.go</span>
+                  <span style="font-size:10px; color:var(--accent-emerald); font-weight:700;">● 170 SCENARIOS OK</span>
                 </div>
+                <div class="device-screenshot-wrap">
+                  <img src="images/stow-preview.svg" alt="Stow Storage Architecture and Simulated Crash Test Diagram" width="760" height="380" loading="lazy">
+                </div>
+              </div>
+              <div class="floating-verification-pill">
+                <span>⚡</span>
+                <span>100% Durability Contract</span>
               </div>
             </div>
           </article>
 
-          <!-- Project 04: SYNTHESIS / COMPONENT LAB -->
-          <article class="project-scene reverse-layout">
-            <div class="scene-dossier">
-              <div class="scene-index-badge">
-                <span class="scene-num">04</span>
-                <span>// PURE CSS SPATIAL SYSTEM</span>
+          <!-- Project 04: AURA -->
+          <article class="project-exhibit reverse-layout">
+            <div class="project-content">
+              <div class="project-index-row">
+                <span class="project-index-num">04</span>
+                <span>SPATIAL CSS &amp; DESIGN SYSTEM</span>
               </div>
 
-              <h3 class="scene-title">Aura</h3>
-              <p class="scene-subtitle">Pure HTML5 &amp; CSS3 Spatial Perspective Installation</p>
+              <h3 class="project-name">Aura</h3>
+              <p class="project-tagline">100% Pure HTML5 &amp; CSS3 Spatial Perspective Installation</p>
 
-              <p class="scene-narrative">
+              <p class="project-description">
                 Created for Scaler School of Technology's WebDev 101 Builders Day. Demonstrates pure CSS layout mastery:
                 multi-axis 3D perspective preserving depth, keyframe gyroscopic rotation, responsive mobile-first architecture,
                 and micro-interactions crafted with <strong>zero client-side JavaScript</strong>.
               </p>
 
-              <div class="scene-telemetry">
+              <div class="project-metric-pill">
                 ⚡ <strong>Zero Framework Footprint:</strong> 100% semantic HTML5 and vanilla CSS3. Extreme Lighthouse performance, instant first paint, and total accessibility compliance.
               </div>
 
-              <div class="scene-stack-row">
-                <span class="stack-pill">HTML5 Semantic</span>
-                <span class="stack-pill">CSS3 3D Preserves</span>
-                <span class="stack-pill">CSS Keyframes</span>
-                <span class="stack-pill">Zero JavaScript</span>
+              <div class="project-tech-pills">
+                <span class="tech-tag">HTML5 Semantic</span>
+                <span class="tech-tag">CSS3 3D Preserves</span>
+                <span class="tech-tag">CSS Keyframes</span>
+                <span class="tech-tag">Zero JavaScript</span>
               </div>
 
-              <div class="scene-actions">
-                <a href="https://github.com/dhwanikher/dhwanikher.github.io" class="magnetic-btn" target="_blank" rel="noopener">
+              <div class="project-links-row">
+                <a href="https://github.com/dhwanikher/dhwanikher.github.io" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
                   <span>View Repository</span>
-                  <span class="arrow-icon">→</span>
+                  <span>↗</span>
                 </a>
               </div>
             </div>
 
-            <!-- Pure CSS Exploded Isometric Component Stack -->
-            <div class="scene-visual" aria-hidden="true">
-              <div class="mockup-stack-stage">
-                <div class="exploded-sheet sheet-base"></div>
-                <div class="exploded-sheet sheet-mid"></div>
-                <div class="exploded-sheet sheet-top">
-                  <div style="font-size:10.5px; color:var(--accent-cyan);">LAYER // 03: SPATIAL PERSPECTIVE</div>
-                  <div style="font-size:12px; color:var(--text-primary); font-weight:700;">transform-style: preserve-3d;</div>
+            <!-- Device Framing with Component Lab SVG -->
+            <div class="project-visual-frame">
+              <div class="device-viewport">
+                <div class="device-chrome-bar">
+                  <div class="chrome-buttons">
+                    <span class="chrome-btn-dot c-red"></span>
+                    <span class="chrome-btn-dot c-yellow"></span>
+                    <span class="chrome-btn-dot c-green"></span>
+                  </div>
+                  <span class="chrome-url">dhwanikher.github.io // layout-lab</span>
+                  <span style="font-size:10px; color:var(--accent-blue); font-weight:700;">● ZERO JS</span>
                 </div>
+                <div class="device-screenshot-wrap">
+                  <img src="images/webdev-preview.svg" alt="Pure HTML5 and CSS3 Spatial Layout Diagram" width="760" height="380" loading="lazy">
+                </div>
+              </div>
+              <div class="floating-verification-pill">
+                <span>✦</span>
+                <span>Zero Client-Side JS</span>
               </div>
             </div>
           </article>
@@ -474,178 +498,176 @@
     <!-- ======================================================================
          05. EXPERIMENTS LABORATORY SECTION
          ====================================================================== -->
-    <section id="experiments" class="experiments-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">03 // Experimental Laboratory</span>
-          <span class="coord-label">PURE CSS WEBKIT LAB</span>
+    <section id="experiments">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">03 // Experimental Laboratory</span>
+          <h2 class="section-title">Interactive CSS3 Wonders</h2>
+          <p class="section-subtitle">
+            Exploring the limits of CSS 3D perspective, keyframe mechanics, and dimensional depth without JavaScript.
+          </p>
         </div>
 
         <div class="experiments-grid">
-          <!-- Experiment 01 -->
-          <article class="experiment-card">
+          <!-- Exp 01: 3D Kinetic Card Fan -->
+          <article class="experiment-box">
             <div>
-              <div class="experiment-header">
-                <span class="exp-num">EXP // 01</span>
-                <span class="exp-type">Spatial Kinetic</span>
+              <div class="exp-badge-row">
+                <span class="exp-badge">EXP // 01</span>
+                <span style="font-size:11px; color:var(--text-muted);">Spatial Fan</span>
               </div>
-              <h3 class="exp-title">3D Hyper-Prism</h3>
+              <h3 class="exp-name">3D Kinetic Card Fan</h3>
               <p class="exp-desc">
-                Continuous multi-axis rotation utilizing CSS <code>preserve-3d</code> with hover state dampening.
+                Dimensional cards overlapping in 3D space that fan out smoothly into an inspected hand on hover.
               </p>
             </div>
 
-            <div class="exp-interactive-prism" aria-hidden="true">
-              <div class="mini-prism">
-                <div class="prism-side p-front"></div>
-                <div class="prism-side p-back"></div>
-                <div class="prism-side p-right"></div>
-                <div class="prism-side p-left"></div>
-                <div class="prism-side p-top"></div>
-                <div class="prism-side p-bottom"></div>
+            <div class="exp-card-fan-stage" aria-hidden="true">
+              <div class="fan-card fan-card-1">
+                <span>CARD 01</span>
+                <strong>Concur.</strong>
+              </div>
+              <div class="fan-card fan-card-2">
+                <span>CARD 02</span>
+                <strong>WAL.</strong>
+              </div>
+              <div class="fan-card fan-card-3">
+                <span>CARD 03</span>
+                <strong>3D CSS.</strong>
               </div>
             </div>
 
-            <div style="font-size:10px; color:var(--text-ghost);">Hover to pause and inspect geometry</div>
+            <div style="font-size:11.5px; color:var(--text-muted); font-family:var(--font-mono);">
+              Hover box to fan out cards in 3D
+            </div>
           </article>
 
-          <!-- Experiment 02 -->
-          <article class="experiment-card">
+          <!-- Exp 02: 3D Spatial Gyro-Prism -->
+          <article class="experiment-box">
             <div>
-              <div class="experiment-header">
-                <span class="exp-num">EXP // 02</span>
-                <span class="exp-type">Horizon Transform</span>
+              <div class="exp-badge-row">
+                <span class="exp-badge">EXP // 02</span>
+                <span style="font-size:11px; color:var(--text-muted);">Continuous Kinematics</span>
               </div>
-              <h3 class="exp-title">Perspective Plane</h3>
+              <h3 class="exp-name">Spatial Gyro-Prism</h3>
               <p class="exp-desc">
-                Receding infinite vector horizon rendered purely with CSS 3D plane rotation and background shifts.
+                Multi-axis geometric crystal rotating in 3D perspective that pauses and expands smoothly upon hover.
               </p>
             </div>
 
-            <div class="exp-perspective-plane" aria-hidden="true">
-              <div class="infinite-grid-plane"></div>
+            <div class="exp-gyro-stage" aria-hidden="true">
+              <div class="gyro-prism">
+                <div class="prism-face face-f"></div>
+                <div class="prism-face face-b"></div>
+                <div class="prism-face face-r"></div>
+                <div class="prism-face face-l"></div>
+                <div class="prism-face face-t"></div>
+                <div class="prism-face face-bt"></div>
+              </div>
             </div>
 
-            <div style="font-size:10px; color:var(--text-ghost);">rotateX(72deg) · Infinite Keyframe Stream</div>
+            <div style="font-size:11.5px; color:var(--text-muted); font-family:var(--font-mono);">
+              Hover to pause and inspect geometry
+            </div>
           </article>
 
-          <!-- Experiment 03 -->
-          <article class="experiment-card">
+          <!-- Exp 03: Live Console Stream -->
+          <article class="experiment-box">
             <div>
-              <div class="experiment-header">
-                <span class="exp-num">EXP // 03</span>
-                <span class="exp-type">Kernel Telemetry</span>
+              <div class="exp-badge-row">
+                <span class="exp-badge">EXP // 03</span>
+                <span style="font-size:11px; color:var(--text-muted);">Kernel Stream</span>
               </div>
-              <h3 class="exp-title">Terminal Stream</h3>
+              <h3 class="exp-name">Telemetry Diagnostic</h3>
               <p class="exp-desc">
-                Real-time monospaced hardware diagnostic simulation with stepped blinking cursor.
+                Monospaced hardware console simulation with live blinking stepped caret and diagnostic metrics.
               </p>
             </div>
 
-            <div class="exp-terminal-readout" aria-hidden="true">
+            <div class="exp-console-stage" aria-hidden="true">
               <div>> VFS.MOCK: MOUNTING CLEAN_CRASH</div>
               <div>> 43 DISK POINTS CHECKED: PASS</div>
-              <div class="typing-cursor">> READY FOR SUMMER 2026</div>
+              <div>> RECOVERY SCENARIOS: 170/170 PASS</div>
+              <div class="console-caret">> READY FOR SUMMER 2026</div>
             </div>
 
-            <div style="font-size:10px; color:var(--text-ghost);">steps(1) blinking hardware caret</div>
+            <div style="font-size:11.5px; color:var(--text-muted); font-family:var(--font-mono);">
+              steps(1) hardware caret animation
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         06. TECHNICAL CAPABILITIES SECTION
+         06. CAPABILITIES & ENGINEERING MATRIX
          ====================================================================== -->
-    <section id="capabilities" class="skills-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">04 // Capabilities System</span>
-          <span class="coord-label">ENGINEERING MATRICES</span>
+    <section id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">04 // Capabilities System</span>
+          <h2 class="section-title">Core Engineering Disciplines</h2>
+          <p class="section-subtitle">
+            The technical competencies I bring to distributed backend systems and high-fidelity user experiences.
+          </p>
         </div>
 
-        <div class="capabilities-matrix">
-          <article class="capability-cell">
-            <span class="cap-number">01 /</span>
-            <h3 class="cap-title">Interface Engineering</h3>
-            <p class="cap-desc">
-              Architecting fluid, high-performance web applications using semantic HTML5, modern CSS3 layout paradigms (Grid &amp; Flexbox), and robust responsive mechanics.
+        <div class="capabilities-bento">
+          <article class="bento-card span-2">
+            <div class="bento-icon-badge">🎨</div>
+            <h3 class="bento-card-title">Interface Engineering &amp; Modern Layouts</h3>
+            <p class="bento-card-desc">
+              Architecting fluid, high-performance web applications using semantic HTML5, modern CSS3 layout paradigms (Grid &amp; Flexbox), and robust responsive mechanics across mobile, tablet, and desktop viewports.
             </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">HTML5 Semantic</span>
-              <span class="cap-spec-tag">CSS Flexbox</span>
-              <span class="cap-spec-tag">CSS Grid</span>
-              <span class="cap-spec-tag">Responsive Design</span>
+            <div class="bento-chips-wrap">
+              <span class="bento-chip featured">HTML5 Semantic Elements</span>
+              <span class="bento-chip featured">CSS3 Flexbox</span>
+              <span class="bento-chip featured">CSS Grid Layout</span>
+              <span class="bento-chip">Responsive Web Design</span>
+              <span class="bento-chip">CSS Variables</span>
             </div>
           </article>
 
-          <article class="capability-cell">
-            <span class="cap-number">02 /</span>
-            <h3 class="cap-title">Durability &amp; Storage</h3>
-            <p class="cap-desc">
+          <article class="bento-card">
+            <div class="bento-icon-badge">⚡</div>
+            <h3 class="bento-card-title">Durability &amp; Storage</h3>
+            <p class="bento-card-desc">
               Building storage systems with Write-Ahead Logging (WAL) and memory tables designed to withstand unannounced power interruptions without data corruption.
             </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">Write-Ahead Logs</span>
-              <span class="cap-spec-tag">Crash Simulation</span>
-              <span class="cap-spec-tag">Torn Writes</span>
-              <span class="cap-spec-tag">Go VFS</span>
+            <div class="bento-chips-wrap">
+              <span class="bento-chip featured">Write-Ahead Logs</span>
+              <span class="bento-chip featured">Crash Simulation</span>
+              <span class="bento-chip">Torn Writes</span>
+              <span class="bento-chip">Go VFS</span>
             </div>
           </article>
 
-          <article class="capability-cell">
-            <span class="cap-number">03 /</span>
-            <h3 class="cap-title">3D Perspective Systems</h3>
-            <p class="cap-desc">
+          <article class="bento-card">
+            <div class="bento-icon-badge">⬡</div>
+            <h3 class="bento-card-title">3D Perspective Systems</h3>
+            <p class="bento-card-desc">
               Constructing dimensional interactive environments using native CSS perspective, transform-style: preserve-3d, and layered Z-index depths with zero external engines.
             </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">CSS 3D Transforms</span>
-              <span class="cap-spec-tag">Perspective 1200px</span>
-              <span class="cap-spec-tag">preserve-3d</span>
-              <span class="cap-spec-tag">Hardware Acceleration</span>
+            <div class="bento-chips-wrap">
+              <span class="bento-chip featured">CSS 3D Transforms</span>
+              <span class="bento-chip">Perspective 1200px</span>
+              <span class="bento-chip">preserve-3d</span>
             </div>
           </article>
 
-          <article class="capability-cell">
-            <span class="cap-number">04 /</span>
-            <h3 class="cap-title">Real-Time Protocols</h3>
-            <p class="cap-desc">
-              Establishing resilient client-server synchronization using persistent WebSockets, atomic database operations, and race-free concurrent state machines.
+          <article class="bento-card span-2">
+            <div class="bento-icon-badge">🛡️</div>
+            <h3 class="bento-card-title">Real-Time Protocols &amp; Rigorous Verification</h3>
+            <p class="bento-card-desc">
+              Authoring comprehensive test suites that intentionally trigger edge cases, fuzzing parsers, validating systems under adversarial concurrency workloads, and establishing live WebSocket state synchronization.
             </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">WebSockets</span>
-              <span class="cap-spec-tag">Atomic Operations</span>
-              <span class="cap-spec-tag">Node.js</span>
-              <span class="cap-spec-tag">MongoDB</span>
-            </div>
-          </article>
-
-          <article class="capability-cell">
-            <span class="cap-number">05 /</span>
-            <h3 class="cap-title">Universal Accessibility</h3>
-            <p class="cap-desc">
-              Treating accessibility as a non-negotiable structural requirement: high-contrast legibility, screen reader navigation, keyboard traversal, and viewport wrapping.
-            </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">WCAG 2.1 AAA</span>
-              <span class="cap-spec-tag">ARIA Landmarks</span>
-              <span class="cap-spec-tag">Focus Rings</span>
-              <span class="cap-spec-tag">Prefers-Reduced-Motion</span>
-            </div>
-          </article>
-
-          <article class="capability-cell">
-            <span class="cap-number">06 /</span>
-            <h3 class="cap-title">Rigorous Verification</h3>
-            <p class="cap-desc">
-              Authoring comprehensive test suites that intentionally trigger edge cases, fuzzing parsers, and validating systems under adversarial concurrency workloads.
-            </p>
-            <div class="cap-specs">
-              <span class="cap-spec-tag">Vitest</span>
-              <span class="cap-spec-tag">Go Test Suites</span>
-              <span class="cap-spec-tag">Race Detection</span>
-              <span class="cap-spec-tag">Git Versioning</span>
+            <div class="bento-chips-wrap">
+              <span class="bento-chip featured">WebSockets</span>
+              <span class="bento-chip featured">Atomic Operations</span>
+              <span class="bento-chip">Vitest</span>
+              <span class="bento-chip">Go Test Suites</span>
+              <span class="bento-chip">Race Detection</span>
+              <span class="bento-chip">WCAG 2.1 AAA a11y</span>
             </div>
           </article>
         </div>
@@ -655,51 +677,54 @@
     <!-- ======================================================================
          07. EXPERIENCE / DOSSIER TIMELINE
          ====================================================================== -->
-    <section id="experience" class="timeline-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">05 // Chronology &amp; Dossier</span>
-          <span class="coord-label">MILESTONES 2026 – PRESENT</span>
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">05 // Chronology &amp; Dossier</span>
+          <h2 class="section-title">Academic &amp; Systems Journey</h2>
+          <p class="section-subtitle">
+            Formal computer science training and autonomous open-source systems research.
+          </p>
         </div>
 
-        <div class="dossier-timeline">
-          <article class="timeline-entry">
-            <div class="timeline-chronology">
-              <span class="chron-year">2026 – 2029</span>
-              <span class="chron-status">Active Matriculation</span>
+        <div class="timeline-list">
+          <article class="timeline-row">
+            <div class="timeline-date-col">
+              <span class="date-year">2026 – 2029</span>
+              <span class="date-status">Current Matriculation</span>
             </div>
-            <div class="timeline-narrative">
-              <h3 class="narrative-role">B.Tech in Computer Science</h3>
-              <div class="narrative-organization">Scaler School of Technology (Degree awarded by BITS Pilani) · Bengaluru</div>
-              <p class="narrative-body">
+            <div class="timeline-info-col">
+              <h3>B.Tech in Computer Science</h3>
+              <div class="timeline-org">Scaler School of Technology (Degree awarded by BITS Pilani) · Bengaluru</div>
+              <p class="timeline-detail">
                 Undergraduate studies focused on Data Structures, Algorithms, Operating Systems, Database Internals, and Advanced Web Engineering. Building production-grade systems alongside industry leaders and engineering mentors.
               </p>
             </div>
           </article>
 
-          <article class="timeline-entry">
-            <div class="timeline-chronology">
-              <span class="chron-year">2026</span>
-              <span class="chron-status">Course Track</span>
+          <article class="timeline-row">
+            <div class="timeline-date-col">
+              <span class="date-year">2026</span>
+              <span class="date-status">Course Track</span>
             </div>
-            <div class="timeline-narrative">
-              <h3 class="narrative-role">Web Development 101 — Builders Day</h3>
-              <div class="narrative-organization">Scaler School of Technology (Group C)</div>
-              <p class="narrative-body">
+            <div class="timeline-info-col">
+              <h3>Web Development 101 — Builders Day</h3>
+              <div class="timeline-org">Scaler School of Technology (Group C)</div>
+              <p class="timeline-detail">
                 Mastery of foundational web technologies: semantic HTML5 structures, CSS Box Model mechanics, CSS Flexbox and Grid layouts, fluid responsive design across viewports, CSS transitions, and accessibility standards with zero client-side JavaScript.
               </p>
             </div>
           </article>
 
-          <article class="timeline-entry">
-            <div class="timeline-chronology">
-              <span class="chron-year">2026</span>
-              <span class="chron-status">Open Source</span>
+          <article class="timeline-row">
+            <div class="timeline-date-col">
+              <span class="date-year">2026</span>
+              <span class="date-status">Open Source</span>
             </div>
-            <div class="timeline-narrative">
-              <h3 class="narrative-role">Systems &amp; Reliability Research</h3>
-              <div class="narrative-organization">Autonomous Project Engineering (Kin, Balloon, Stow)</div>
-              <p class="narrative-body">
+            <div class="timeline-info-col">
+              <h3>Systems &amp; Reliability Research</h3>
+              <div class="timeline-org">Autonomous Project Engineering (Kin, Balloon, Stow)</div>
+              <p class="timeline-detail">
                 Engineered and published three production-grade projects featuring verified failure recovery: real-time caregiving coordination with WebSocket atomic arbitration, offline CAD inspection parsing with corrupted glyph recovery, and an embedded storage engine tested by simulated power cuts.
               </p>
             </div>
@@ -712,85 +737,87 @@
          08. CINEMATIC CONTACT SECTION
          ====================================================================== -->
     <section id="contact" class="contact-section">
-      <div class="viewport-frame">
-        <div class="section-tag-line">
-          <span class="tag-badge">06 // Transmission Terminal</span>
-          <span class="coord-label">STATUS: OPEN FOR SUMMER 2026</span>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">06 // Connect</span>
+          <h2 class="section-title">Get in Touch.</h2>
+          <p class="section-subtitle">
+            Open to discussions regarding Summer 2026 software engineering internships, systems research, and ambitious frontend collaborations.
+          </p>
         </div>
 
-        <div class="contact-layout">
+        <div class="contact-grid">
           <div>
             <h2 class="contact-headline">
-              <span>Let's Build</span>
-              <span class="accent-line">Something</span>
-              <span>Impossible.</span>
+              Let's Build<br>
+              Something<br>
+              <span class="highlight-blue">Extraordinary.</span>
             </h2>
 
-            <p class="contact-prose">
-              I am currently open to discussions regarding <strong>Summer 2026 Software Engineering Internships</strong>,
-              distributed systems research, or avant-garde creative frontend engineering collaborations.
+            <p class="contact-text">
+              Whether you want to discuss systems durability, collaborate on high-performance web applications, or chat about software engineering, my inbox is always open.
             </p>
 
-            <div class="direct-actions-grid">
-              <a href="mailto:dhwanikherawat@gmail.com" class="action-card">
-                <div class="action-info">
-                  <span class="action-type">Direct Transmission</span>
-                  <span class="action-label">dhwanikherawat@gmail.com</span>
+            <div class="contact-channels-grid">
+              <a href="mailto:dhwanikherawat@gmail.com" class="channel-card">
+                <div>
+                  <div class="channel-type">Direct Email</div>
+                  <div class="channel-value">dhwanikherawat@gmail.com</div>
                 </div>
-                <span class="action-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
 
-              <a href="https://github.com/dhwanikher" class="action-card" target="_blank" rel="noopener">
-                <div class="action-info">
-                  <span class="action-type">Code Repository</span>
-                  <span class="action-label">github.com/dhwanikher</span>
+              <a href="https://github.com/dhwanikher" class="channel-card" target="_blank" rel="noopener">
+                <div>
+                  <div class="channel-type">GitHub</div>
+                  <div class="channel-value">github.com/dhwanikher</div>
                 </div>
-                <span class="action-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
 
-              <a href="https://www.linkedin.com/in/dhwani-kherawat-720461418/" class="action-card" target="_blank" rel="noopener">
-                <div class="action-info">
-                  <span class="action-type">Professional Network</span>
-                  <span class="action-label">dhwani-kherawat</span>
+              <a href="https://www.linkedin.com/in/dhwani-kherawat-720461418/" class="channel-card" target="_blank" rel="noopener">
+                <div>
+                  <div class="channel-type">LinkedIn</div>
+                  <div class="channel-value">dhwani-kherawat</div>
                 </div>
-                <span class="action-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
 
-              <div class="action-card">
-                <div class="action-info">
-                  <span class="action-type">Physical Coordinates</span>
-                  <span class="action-label">Bengaluru, India</span>
+              <div class="channel-card">
+                <div>
+                  <div class="channel-type">Location</div>
+                  <div class="channel-value">Bengaluru, Karnataka, India</div>
                 </div>
-                <span class="action-arrow">📍</span>
+                <span class="channel-arrow">📍</span>
               </div>
             </div>
           </div>
 
           <!-- Pure CSS Contact Dispatcher Form -->
-          <form class="dispatcher-form" action="mailto:dhwanikherawat@gmail.com" method="post" enctype="text/plain">
-            <div class="form-field">
-              <label for="caller-name" class="field-label">Your Name // Identification</label>
-              <input type="text" id="caller-name" name="name" class="field-input" placeholder="e.g. Elena Rostova" required>
+          <form class="contact-form-box" action="mailto:dhwanikherawat@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
             </div>
 
-            <div class="form-field">
-              <label for="caller-email" class="field-label">Your Email // Return Channel</label>
-              <input type="email" id="caller-email" name="email" class="field-input" placeholder="e.g. elena@agency.design" required>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
             </div>
 
-            <div class="form-field">
-              <label for="caller-subject" class="field-label">Subject // Topic</label>
-              <input type="text" id="caller-subject" name="subject" class="field-input" placeholder="Opportunity / Project Inquiry" required>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Project Inquiry / Opportunity" required>
             </div>
 
-            <div class="form-field">
-              <label for="caller-message" class="field-label">Message // Transmission</label>
-              <textarea id="caller-message" name="message" class="field-textarea" placeholder="Describe the mission or architecture..." required></textarea>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about what you're building..." required></textarea>
             </div>
 
-            <button type="submit" class="magnetic-btn" style="width:100%; justify-content:center;">
+            <button type="submit" class="btn btn-primary" style="width:100%;">
               <span>Transmit Message</span>
-              <span class="arrow-icon">→</span>
+              <span>→</span>
             </button>
           </form>
         </div>
@@ -800,28 +827,28 @@
   </main>
 
   <!-- ========================================================================
-       09. MINIMALIST EDITORIAL FOOTER
+       09. MINIMAL FOOTER
        ======================================================================== -->
   <footer class="site-footer">
-    <div class="viewport-frame footer-matrix">
-      <div class="footer-col-brand">
-        <span class="footer-brand-title">Dhwani Kherawat</span>
-        <span class="footer-stamp">© 2026 // Autonomous Pure HTML5 + CSS3 Digital Craft</span>
-        <span style="font-size:10px; color:var(--text-ghost); margin-top:4px;">Zero JavaScript · 100% Native Spatial CSS · Scaler School of Technology</span>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand-title">Dhwani Kherawat</div>
+        <p class="footer-tagline">© 2026 · Handcrafted with pure semantic HTML5 &amp; CSS3 ❤️</p>
       </div>
 
-      <nav class="footer-nav" aria-label="Footer Navigation">
+      <nav class="footer-links" aria-label="Footer Links">
         <a href="#hero">Origin</a>
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#experiments">Experiments</a>
         <a href="#capabilities">Capabilities</a>
+        <a href="#experience">Journey</a>
         <a href="#contact">Contact</a>
         <a href="./resume.pdf" target="_blank" rel="noopener">Dossier</a>
       </nav>
 
-      <a href="#hero" class="footer-return-top" aria-label="Return to top of page">
-        <span>↑ Zenith</span>
+      <a href="#hero" class="back-to-top-btn" aria-label="Back to top of page">
+        <span>↑ Back to Top</span>
       </a>
     </div>
   </footer>
