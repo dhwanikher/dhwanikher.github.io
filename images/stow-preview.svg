@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14181D" />
+      <stop offset="100%" stop-color="#1C2127" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242B33" />
+      <stop offset="100%" stop-color="#1A2026" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="380" rx="8" fill="url(#bgGrad)" stroke="#2F3842" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="760" height="38" rx="8" fill="#181D22"/>
+  <rect x="0" y="30" width="760" height="8" fill="#181D22"/>
+  <circle cx="20" cy="19" r="5" fill="#E25C54" />
+  <circle cx="36" cy="19" r="5" fill="#E6A23C" />
+  <circle cx="52" cy="19" r="5" fill="#67C23A" />
+  <text x="80" y="23" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#8B949E">stow/internal/vfs — crash_test.go (Simulated Power Loss)</text>
+
+  <!-- Left Card: Storage Architecture -->
+  <g transform="translate(24, 56)">
+    <rect width="340" height="236" rx="6" fill="url(#cardGrad)" stroke="#384350" stroke-width="1" filter="url(#shadow)"/>
+    <text x="18" y="28" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="13" fill="#7CA3D9">Durability Engine Architecture</text>
+
+    <!-- Step 1: In-Flight Write -->
+    <rect x="18" y="44" width="304" height="42" rx="4" fill="#151A1F" stroke="#2B3540"/>
+    <text x="30" y="62" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#E8E5DC">Write(key, val) <tspan fill="#A8502E">Sync: true</tspan></text>
+    <text x="30" y="77" font-family="'IBM Plex Sans', sans-serif" font-size="10" fill="#8B949E">Caller guarantees atomic durability contract</text>
+
+    <!-- Arrow -->
+    <path d="M170 88 L170 102" stroke="#5C7DA6" stroke-width="2" stroke-dasharray="3 3"/>
+    <polygon points="166,100 170,106 174,100" fill="#5C7DA6"/>
+
+    <!-- Step 2: Dual Dispatch -->
+    <rect x="18" y="108" width="144" height="52" rx="4" fill="#1A2533" stroke="#2B4666"/>
+    <text x="26" y="128" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="600" fill="#7CA3D9">WAL Append</text>
+    <text x="26" y="145" font-family="'IBM Plex Sans', sans-serif" font-size="9.5" fill="#A7ABB1">Framed CRC32 + sync</text>
+
+    <rect x="178" y="108" width="144" height="52" rx="4" fill="#202A24" stroke="#2D4D36"/>
+    <text x="186" y="128" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="600" fill="#78C68E">Memtable</text>
+    <text x="186" y="145" font-family="'IBM Plex Sans', sans-serif" font-size="9.5" fill="#A7ABB1">In-memory skip list</text>
+
+    <!-- Arrow down -->
+    <path d="M170 162 L170 176" stroke="#5C7DA6" stroke-width="2"/>
+    <polygon points="166,174 170,180 174,174" fill="#5C7DA6"/>
+
+    <!-- Step 3: Virtual FS Model -->
+    <rect x="18" y="182" width="304" height="42" rx="4" fill="#291E1D" stroke="#5E2C22"/>
+    <text x="30" y="200" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#E58A6E">vfs.Mem with Crash Injection</text>
+    <text x="30" y="215" font-family="'IBM Plex Sans', sans-serif" font-size="10" fill="#D08363">Directory sync assertion &amp; torn-write emulator</text>
+  </g>
+
+  <!-- Right Card: Test Matrix & Verification -->
+  <g transform="translate(396, 56)">
+    <rect width="340" height="236" rx="6" fill="url(#cardGrad)" stroke="#384350" stroke-width="1" filter="url(#shadow)"/>
+    <text x="18" y="28" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="13" fill="#D08363">Failure Injection Verification</text>
+
+    <g font-family="'IBM Plex Mono', monospace" font-size="11">
+      <rect x="18" y="44" width="304" height="28" rx="3" fill="#15191E" stroke="#28303A"/>
+      <text x="28" y="62" fill="#78C68E">✓ 43 Durability Crash Points</text>
+      <text x="260" y="62" fill="#8B949E">100%</text>
+
+      <rect x="18" y="80" width="304" height="28" rx="3" fill="#15191E" stroke="#28303A"/>
+      <text x="28" y="98" fill="#78C68E">✓ 3 Torn-Write Variants per Point</text>
+      <text x="270" y="98" fill="#8B949E">x3</text>
+
+      <rect x="18" y="116" width="304" height="28" rx="3" fill="#15191E" stroke="#28303A"/>
+      <text x="28" y="134" fill="#78C68E">✓ ~170 Recovery Scenarios Replayed</text>
+      <text x="268" y="134" fill="#8B949E">Pass</text>
+
+      <rect x="18" y="152" width="304" height="28" rx="3" fill="#15191E" stroke="#28303A"/>
+      <text x="28" y="170" fill="#78C68E">✓ Truncated WAL at All Byte Offsets</text>
+      <text x="268" y="170" fill="#8B949E">~200</text>
+
+      <!-- Terminal Output Snippet -->
+      <rect x="18" y="188" width="304" height="36" rx="3" fill="#101316" stroke="#20262E"/>
+      <text x="26" y="204" font-size="10" fill="#7CA3D9">$ go test ./... -v</text>
+      <text x="26" y="217" font-size="9.5" fill="#78C68E">ok  stow/internal/wal  0.005s (durability verified)</text>
+    </g>
+  </g>
+
+  <!-- Footer Banner Inside Card -->
+  <g transform="translate(24, 304)">
+    <rect width="712" height="56" rx="6" fill="#18202A" stroke="#2B3C52" stroke-width="1"/>
+    <circle cx="28" cy="28" r="8" fill="#1F4E8C" opacity="0.6"/>
+    <circle cx="28" cy="28" r="4" fill="#7CA3D9"/>
+    <text x="46" y="25" font-family="'IBM Plex Mono', monospace" font-size="11.5" font-weight="600" fill="#E8E5DC">The Durability Contract Guarantee:</text>
+    <text x="46" y="42" font-family="'IBM Plex Sans', sans-serif" font-size="11" fill="#A7ABB1">"When Put/Delete/Write returns nil with Sync enabled, the write is on disk and survives any crash."</text>
+  </g>
+</svg>
