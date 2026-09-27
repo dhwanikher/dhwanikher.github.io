@@ -14,7 +14,7 @@ Designed at the intersection of an **Awwwards-winning digital agency**, an **exp
 
 Instead of conventional flat cards or generic templates, the entire portfolio operates as a dimensional spatial environment constructed exclusively with native web standards:
 
-- **Futuristic & Minimalist**: Restrained chromatic void palette (`#05070a`) illuminated by quantum cyan (`#00f0ff`) and amber accents.
+- **Futuristic, Serene & Minimalist**: Restrained architectural paper palette (`#FBF9F5`, `#FFFFFF`) with deep high-contrast ink typography (`#121822`) and refined Aegean cobalt (`#1B528F`) accents.
 - **Cinematic & Editorial**: Enormous display typography paired with high-density monospace telemetry and coordinate matrices.
 - **Genuine CSS 3D Perspective**: True three-dimensional depth using `perspective`, `transform-style: preserve-3d`, `translateZ()`, `rotateX()`, and `rotateY()` — with no Three.js, WebGL, or Canvas.
 - **Zero-JavaScript Interactions**: Every micro-interaction — including the mobile navigation drawer, magnetic button illusions, and the 3D rotating hypercube/prism — is powered natively by CSS.
