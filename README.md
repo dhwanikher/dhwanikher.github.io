@@ -69,8 +69,7 @@ dhwanikher.github.io/
 │   ├── kin-preview.jpg     # Project 1 screenshot
 │   ├── balloon-preview.jpg # Project 2 screenshot
 │   ├── stow-preview.svg    # Project 3 architecture diagram (SVG)
-│   ├── webdev-preview.svg  # Project 4 layout diagram (SVG)
-│   └── dhwani-graphic.png  # Graphic / branding asset
+│   └── webdev-preview.svg  # Project 4 layout diagram (SVG)
 │
 └── README.md               # Project documentation and submission details
 ```
