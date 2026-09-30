@@ -90,23 +90,33 @@ h2 { font-size: clamp(30px, 4vw, 44px); margin-bottom: 40px; }
 
 /* 4. HERO (top of page) */
 .hero { padding: 110px 0 90px; }
+.hero .container { animation: fade-up 0.8s ease-out; }   /* plays once on page load */
 .hero h1 { font-size: clamp(44px, 8vw, 88px); letter-spacing: -0.02em; margin-bottom: 24px; }
 .hero p { max-width: 620px; font-size: 18px; margin-bottom: 32px; }
 .hero strong { color: var(--ink); }
 .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
 
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* 5. ABOUT */
-.about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; }
+.about-text { max-width: 680px; }
 .about-text p { margin-bottom: 16px; }
 .about-text strong { color: var(--ink); }
+
+/* 5b. SKILLS */
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
 .skills-box {
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 24px;
-  margin-bottom: 16px;
+  transition: transform 0.2s;   /* smooth lift on hover */
 }
+.skills-box:hover { transform: translateY(-4px); }
 .skills-box h3 { font-size: 16px; margin-bottom: 12px; }
 
 /* small rounded labels, used for skills and project tech */
@@ -193,6 +203,6 @@ footer { padding: 24px 0; font-size: 14px; text-align: center; color: var(--ink-
 @media (max-width: 800px) {
   section { padding: 64px 0; }
   .hero { padding: 64px 0; }
-  .about-grid, .project { grid-template-columns: 1fr; gap: 32px; }
+  .skills-grid, .project { grid-template-columns: 1fr; gap: 32px; }
   .project.flip .project-text { order: 0; }
 }
